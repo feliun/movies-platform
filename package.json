@@ -1,0 +1,12 @@
+{
+  "name": "movies-platform",
+  "version": "0.0.1",
+  "description": "A microservice-based platform to serve movies data",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feliun/movies-platform.git"
+  },
+  "author": "Felipe Polo Ruiz <felipe.polo@gmail.com> (https://github.com/feliun)",
+  "license": "MIT"
+}
