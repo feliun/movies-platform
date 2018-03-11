@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+
+  movies-api:
+    build: ..
+    image: quay.io/guidesmiths/svc-example:latest
+    links:
+
+
+
+
+
+
+
+
+
