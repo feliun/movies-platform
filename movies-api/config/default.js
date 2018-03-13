@@ -5,6 +5,7 @@ module.exports = {
     shutdown: { delay: '5s' },
   },
   service: { reload: { window: '60s' } },
+  mongo: { url: `mongodb://${process.env.MONGO_USER || 'node'}:${process.env.MONGO_PWD || 'node'}@127.0.0.1/movies` },
   logger: {
     transport: 'bunyan',
     include: [
