@@ -1,0 +1,16 @@
+sudo: true
+language: node_js
+branches:
+  only:
+  - master
+before_script:
+- make ensure-dependencies
+script:
+- make brand
+- make package
+- make qa
+matrix:
+  include:
+  - env: SERVICE=movies-api
+    services:
+    - docker
