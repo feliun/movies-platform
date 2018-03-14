@@ -3,8 +3,13 @@ language: node_js
 branches:
   only:
   - master
+install: # needed to run build/deployment scripts
+  - cd ./$SERVICE
+  - nvm install
+  - nvm use
+  - node --version
+  - npm install --only=production
 before_script:
-- cd ./$SERVICE
 - make ensure-dependencies
 script:
 - make brand
