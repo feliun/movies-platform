@@ -3,18 +3,24 @@ language: node_js
 branches:
   only:
   - master
-install: # needed to run build/deployment scripts
-  - cd ./$SERVICE
-  - nvm install
-  - nvm use
-  - node --version
-  - npm install --only=production
+env:
+  global:
+  - secure: FoQIsEM+i0xnnX1MTNZQv+8598uI7HDVPWNaspZ467zVfU7jDGaUDRKwurwwNp1s5uyTuHKPQZh3ca6giXDe1B3DEZ2pnzCEaPVkAMbW1Sq1a5wX+vXzKiCN4iUtFWnN6je4O9FtosFM3eahDIbs1ofbhIEwyAghOilf+tF+UPKlS70aduIMSsHv43FuC4+JHZZ5C2FF+0fL9npuQ0HiE/zRy3/dhIvdX+FzTd8dzmWl0fGfmEmTXtbwNZ+qX8kWUVj0KcNOTtf+drNTKrcu+mqIrjGCHhmupTGjGPwWJMFuSnylKWd8oV7LYsZ+pVgXxEfR6mQxsdUhU3HHTyAMvl62eOb+S8j1p0Vl39jOWUuaWYU///AlTOirJixTLhjkOYGgktUiw24NTP84Y6sFJM67dNH27V6DdFf7kgY3Pbu4CLRpsuAV4VrQPNgw0XaiM2MwZrkJjbTBOsyakZVH8xWlqKW9kb/2Egd8MEiajkjls5he8jqDNC0xpWroOr23L9XJREf9PoMOhx2YCfihHaAfyX7tyvO9FAVlqsotkCbZMGxwNYFRmGHQhcxq9UJKW3ORFxoj0Gb7RsYB0r9b/+5SAgaBYMstwRBJxR643WRduXUyGyCC/gpip6BjZ5MW2sdlyy/2uuPUGi+dYURAPM1f0W0IpjVd9eWFNE42UG8=
+  - secure: Epto/WRDXlbr/lkNb/zaV1XysDfGecy3fzEizOClVrlu0zxnmBTuibpzwRh3r6r7WMmvwFvbLbpGKeRIVgk1GqUky2zIfw9MeBcypy29rKwT6GdkxS5wl7uI6yrQrEEPN/ADa9OZlAiZrv+AyvpUCcOBj/sOZHzfLyH/CqV+DS7BGthqWpbnUFlQ5fNSBAZ18o4nZEtG8FNQdo+zgkRS2FJY5HNiW6S+HPJfWwaUPr0es9uiZBPRP3y9gSYP2ZHyWJcq+Ya+XPfYMJON2HR2Mrqwyx4Rnz2O6WWGLZo+TudT/p63LeNJSe9POD4I6WNa06kQVXQrHQA+NujJPTLHnyTq0WCycYAEjmMtB35RDwxv6iKlIO2xrKcWGKJWKJLbgaSLMhITDHFrnoh7c/5orSOZ56iwSzccJ3ZH5eflwEnxbRWWfek3w2U4t5tnveI3RXdDOFN14Z8iuYp/A5pf7IHw8LfZqkjXZB9Y3HOmDffpAvcqI9w/QHU3cPwXOHQYivmMkM7SUw9LjP+nwSktYGIqT7OvwFH4xeee+eoP0H9Ra4xYcaorD/R+QlJ8IkiEcMKHvorKLWa0GkcECxetjZaDTASIypBmv/UDGaBdVGybWS3Wr9HDf/iue8TXGC1Em3wuz14i1tsPIEA2GG/pcquC2tx74xHgQocPtmgfcUs=
+install:
+- cd ./$SERVICE
+- nvm install
+- nvm use
+- node --version
+- npm install --only=production
 before_script:
 - make ensure-dependencies
 script:
 - make brand
 - make package
 - make qa
+after_success:
+- make archive
 matrix:
   include:
   - env: SERVICE=movies-api
