@@ -3,6 +3,7 @@ version: '2.1'
 services:
   mongo:
     build: ./mongo
+    container_name: mongo
     image: feliun/movies-platform:mongo
     volumes:
       - ./database:/data # volume in host -> $(pwd)/database
