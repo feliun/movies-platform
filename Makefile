@@ -12,7 +12,8 @@ brand:
 	@cat ./manifest.json
 
 qa:
-	@docker run --name $(SERVICE) --env SERVICE_ENV=build --rm --network=local --entrypoint npm $(SERVICE):$(TRAVIS_BUILD_NUMBER) run qa --
+	@docker run --name $(SERVICE) -e SERVICE_ENV=build -e MONGO_HOST=mongo --rm --network=local --entrypoint npm $(SERVICE):$(TRAVIS_BUILD_NUMBER) run qa --
 
 ensure-dependencies:
 	@npm run docker
+	@sleep 10
