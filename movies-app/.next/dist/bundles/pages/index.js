@@ -67,7 +67,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -87,96 +87,63 @@ module.exports =
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__store__ = __webpack_require__("./store.js");
 var _jsxFileName = '/Users/gibbonsoftltd/Documents/development/myhacks/movies-platform/movies-app/components/AddCount.js';
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 
 
 
 
-
-var AddCount = function (_Component) {
-  _inherits(AddCount, _Component);
-
-  function AddCount() {
-    var _ref;
-
-    var _temp, _this, _ret;
-
-    _classCallCheck(this, AddCount);
-
-    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = AddCount.__proto__ || Object.getPrototypeOf(AddCount)).call.apply(_ref, [this].concat(args))), _this), _this.add = function () {
-      _this.props.addCount();
-    }, _temp), _possibleConstructorReturn(_this, _ret);
-  }
-
-  _createClass(AddCount, [{
-    key: 'render',
-    value: function render() {
-      var count = this.props.count;
-
-      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-        'div',
+var AddCount = function AddCount(_ref) {
+  var count = _ref.count,
+      addCount = _ref.addCount;
+  return (// eslint-disable-line no-shadow
+    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+      'div',
+      {
+        className: 'jsx-2895368816',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 7
+        }
+      },
+      __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default.a, {
+        styleId: '2895368816',
+        css: 'div.jsx-2895368816{padding:0 0 20px 0;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHMvQWRkQ291bnQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBT2dCLEFBRzRCLG1CQUNyQiIsImZpbGUiOiJjb21wb25lbnRzL0FkZENvdW50LmpzIiwic291cmNlUm9vdCI6Ii9Vc2Vycy9naWJib25zb2Z0bHRkL0RvY3VtZW50cy9kZXZlbG9wbWVudC9teWhhY2tzL21vdmllcy1wbGF0Zm9ybS9tb3ZpZXMtYXBwIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcbmltcG9ydCB7IGNvbm5lY3QgfSBmcm9tICdyZWFjdC1yZWR1eCc7XG5pbXBvcnQgeyBiaW5kQWN0aW9uQ3JlYXRvcnMgfSBmcm9tICdyZWR1eCc7XG5pbXBvcnQgeyBhZGRDb3VudCB9IGZyb20gJy4uL3N0b3JlJztcblxuY29uc3QgQWRkQ291bnQgPSAoeyBjb3VudCwgYWRkQ291bnQgfSkgPT4gKCAvLyBlc2xpbnQtZGlzYWJsZS1saW5lIG5vLXNoYWRvd1xuICA8ZGl2PlxuICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgIGRpdiB7XG4gICAgICAgIHBhZGRpbmc6IDAgMCAyMHB4IDA7XG4gICAgICB9XG4gIGB9PC9zdHlsZT5cbiAgICA8aDE+QWRkQ291bnQ6IDxzcGFuPntjb3VudH08L3NwYW4+PC9oMT5cbiAgICA8YnV0dG9uIG9uQ2xpY2s9e2FkZENvdW50fT5BZGQgVG8gQ291bnQ8L2J1dHRvbj5cbiAgPC9kaXY+XG4pO1xuXG5jb25zdCBtYXBTdGF0ZVRvUHJvcHMgPSAoeyBjb3VudCB9KSA9PiAoeyBjb3VudCB9KTtcblxuY29uc3QgbWFwRGlzcGF0Y2hUb1Byb3BzID0gKGRpc3BhdGNoKSA9PiAoeyBhZGRDb3VudDogYmluZEFjdGlvbkNyZWF0b3JzKGFkZENvdW50LCBkaXNwYXRjaCkgfSk7XG5cbmV4cG9ydCBkZWZhdWx0IGNvbm5lY3QobWFwU3RhdGVUb1Byb3BzLCBtYXBEaXNwYXRjaFRvUHJvcHMpKEFkZENvdW50KTtcbiJdfQ== */\n/*@ sourceURL=components/AddCount.js */'
+      }),
+      __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        'h1',
         {
-          className: 'jsx-2569186640',
+          className: 'jsx-2895368816',
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 13
+          }
+        },
+        'AddCount: ',
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          'span',
+          {
+            className: 'jsx-2895368816',
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 13
+            }
+          },
+          count
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        'button',
+        { onClick: addCount, className: 'jsx-2895368816',
           __source: {
             fileName: _jsxFileName,
             lineNumber: 14
           }
         },
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default.a, {
-          styleId: '2569186640',
-          css: 'div.jsx-2569186640{padding:0 0 20px 0;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHMvQWRkQ291bnQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBY29CLEFBR2dDLG1CQUNyQiIsImZpbGUiOiJjb21wb25lbnRzL0FkZENvdW50LmpzIiwic291cmNlUm9vdCI6Ii9Vc2Vycy9naWJib25zb2Z0bHRkL0RvY3VtZW50cy9kZXZlbG9wbWVudC9teWhhY2tzL21vdmllcy1wbGF0Zm9ybS9tb3ZpZXMtYXBwIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7Q29tcG9uZW50fSBmcm9tICdyZWFjdCdcbmltcG9ydCB7IGNvbm5lY3QgfSBmcm9tICdyZWFjdC1yZWR1eCdcbmltcG9ydCB7IGJpbmRBY3Rpb25DcmVhdG9ycyB9IGZyb20gJ3JlZHV4J1xuaW1wb3J0IHsgYWRkQ291bnQgfSBmcm9tICcuLi9zdG9yZSdcblxuY2xhc3MgQWRkQ291bnQgZXh0ZW5kcyBDb21wb25lbnQge1xuICBhZGQgPSAoKSA9PiB7XG4gICAgdGhpcy5wcm9wcy5hZGRDb3VudCgpXG4gIH1cblxuICByZW5kZXIgKCkge1xuICAgIGNvbnN0IHsgY291bnQgfSA9IHRoaXMucHJvcHNcbiAgICByZXR1cm4gKFxuICAgICAgPGRpdj5cbiAgICAgICAgPHN0eWxlIGpzeD57YFxuICAgICAgICAgIGRpdiB7XG4gICAgICAgICAgICBwYWRkaW5nOiAwIDAgMjBweCAwO1xuICAgICAgICAgIH1cbiAgICAgIGB9PC9zdHlsZT5cbiAgICAgICAgPGgxPkFkZENvdW50OiA8c3Bhbj57Y291bnR9PC9zcGFuPjwvaDE+XG4gICAgICAgIDxidXR0b24gb25DbGljaz17dGhpcy5hZGR9PkFkZCBUbyBDb3VudDwvYnV0dG9uPlxuICAgICAgPC9kaXY+XG4gICAgKVxuICB9XG59XG5cbmNvbnN0IG1hcFN0YXRlVG9Qcm9wcyA9ICh7IGNvdW50IH0pID0+ICh7IGNvdW50IH0pXG5cbmNvbnN0IG1hcERpc3BhdGNoVG9Qcm9wcyA9IChkaXNwYXRjaCkgPT4ge1xuICByZXR1cm4ge1xuICAgIGFkZENvdW50OiBiaW5kQWN0aW9uQ3JlYXRvcnMoYWRkQ291bnQsIGRpc3BhdGNoKVxuICB9XG59XG5cbmV4cG9ydCBkZWZhdWx0IGNvbm5lY3QobWFwU3RhdGVUb1Byb3BzLCBtYXBEaXNwYXRjaFRvUHJvcHMpKEFkZENvdW50KVxuIl19 */\n/*@ sourceURL=components/AddCount.js */'
-        }),
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-          'h1',
-          {
-            className: 'jsx-2569186640',
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 20
-            }
-          },
-          'AddCount: ',
-          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-            'span',
-            {
-              className: 'jsx-2569186640',
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 20
-              }
-            },
-            count
-          )
-        ),
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-          'button',
-          { onClick: this.add, className: 'jsx-2569186640',
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 21
-            }
-          },
-          'Add To Count'
-        )
-      );
-    }
-  }]);
-
-  return AddCount;
-}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
+        'Add To Count'
+      )
+    )
+  );
+};
 
 var mapStateToProps = function mapStateToProps(_ref2) {
   var count = _ref2.count;
@@ -184,9 +151,7 @@ var mapStateToProps = function mapStateToProps(_ref2) {
 };
 
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
-  return {
-    addCount: Object(__WEBPACK_IMPORTED_MODULE_3_redux__["bindActionCreators"])(__WEBPACK_IMPORTED_MODULE_4__store__["a" /* addCount */], dispatch)
-  };
+  return { addCount: Object(__WEBPACK_IMPORTED_MODULE_3_redux__["bindActionCreators"])(__WEBPACK_IMPORTED_MODULE_4__store__["a" /* addCount */], dispatch) };
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_2_react_redux__["connect"])(mapStateToProps, mapDispatchToProps)(AddCount));
@@ -477,7 +442,7 @@ var initStore = function initStore() {
 
 /***/ }),
 
-/***/ 3:
+/***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./pages/index.js");

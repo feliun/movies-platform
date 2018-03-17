@@ -72,26 +72,18 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/next/dist/pages/_error.js":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "/Users/gibbonsoftltd/Documents/development/myhacks/movies-platform/movies-app/node_modules/next/dist/pages/_error.js":
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__("next/error")
-
+module.exports = require("/Users/gibbonsoftltd/Documents/development/myhacks/movies-platform/movies-app/node_modules/next/dist/pages/_error.js");
 
 /***/ }),
 
 /***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("./node_modules/next/dist/pages/_error.js");
+module.exports = __webpack_require__("/Users/gibbonsoftltd/Documents/development/myhacks/movies-platform/movies-app/node_modules/next/dist/pages/_error.js");
 
-
-/***/ }),
-
-/***/ "next/error":
-/***/ (function(module, exports) {
-
-module.exports = require("next/error");
 
 /***/ })
 
