@@ -2,7 +2,7 @@ module.exports =
 
         __NEXT_REGISTER_PAGE('/', function() {
           var comp = 
-      webpackJsonp([3],{
+      webpackJsonp([4],{
 
 /***/ "./components/AddCount.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -167,43 +167,42 @@ var _default = Object(__WEBPACK_IMPORTED_MODULE_2_react_redux__["connect"])(mapS
 var _jsxFileName = '/Users/gibbonsoftltd/Documents/development/myhacks/movies-platform/movies-app/components/Clock.js';
 
 
-
 (function () {
   var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
   enterModule && enterModule(module);
 })();
 
+
+
+var pad = function pad(n) {
+  return n < 10 ? '0' + n : n;
+};
+var format = function format(t) {
+  return pad(t.getUTCHours()) + ':' + pad(t.getUTCMinutes()) + ':' + pad(t.getUTCSeconds());
+};
+
 var _default = function _default(_ref) {
   var lastUpdate = _ref.lastUpdate,
       light = _ref.light;
-
   return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
     'div',
     {
-      className: 'jsx-3148902309' + ' ' + ((light ? 'light' : '') || ''),
+      className: 'jsx-2115298601' + ' ' + ((light ? 'light' : '') || ''),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 3
+        lineNumber: 7
       }
     },
     format(new Date(lastUpdate)),
     __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default.a, {
-      styleId: '3148902309',
-      css: 'div.jsx-3148902309{padding:15px;display:inline-block;color:#82FA58;font:50px menlo,monaco,monospace;background-color:#000;}.light.jsx-3148902309{background-color:#999;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHMvQ2xvY2suanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBSWtCLEFBR3dCLEFBUVMsYUFQRCxTQVF2QixZQVBnQixjQUNxQixpQ0FDYixzQkFDeEIiLCJmaWxlIjoiY29tcG9uZW50cy9DbG9jay5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvZ2liYm9uc29mdGx0ZC9Eb2N1bWVudHMvZGV2ZWxvcG1lbnQvbXloYWNrcy9tb3ZpZXMtcGxhdGZvcm0vbW92aWVzLWFwcCIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0ICh7IGxhc3RVcGRhdGUsIGxpZ2h0IH0pID0+IHtcbiAgcmV0dXJuIChcbiAgICA8ZGl2IGNsYXNzTmFtZT17bGlnaHQgPyAnbGlnaHQnIDogJyd9PlxuICAgICAge2Zvcm1hdChuZXcgRGF0ZShsYXN0VXBkYXRlKSl9XG4gICAgICA8c3R5bGUganN4PntgXG4gICAgICAgIGRpdiB7XG4gICAgICAgICAgcGFkZGluZzogMTVweDtcbiAgICAgICAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgICAgICAgY29sb3I6ICM4MkZBNTg7XG4gICAgICAgICAgZm9udDogNTBweCBtZW5sbywgbW9uYWNvLCBtb25vc3BhY2U7XG4gICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogIzAwMDtcbiAgICAgICAgfVxuXG4gICAgICAgIC5saWdodCB7XG4gICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogIzk5OTtcbiAgICAgICAgfVxuICAgICAgYH08L3N0eWxlPlxuICAgIDwvZGl2PlxuICApXG59XG5cbmNvbnN0IGZvcm1hdCA9IHQgPT4gYCR7cGFkKHQuZ2V0VVRDSG91cnMoKSl9OiR7cGFkKHQuZ2V0VVRDTWludXRlcygpKX06JHtwYWQodC5nZXRVVENTZWNvbmRzKCkpfWBcblxuY29uc3QgcGFkID0gbiA9PiBuIDwgMTAgPyBgMCR7bn1gIDogblxuIl19 */\n/*@ sourceURL=components/Clock.js */'
+      styleId: '2115298601',
+      css: 'div.jsx-2115298601{padding:15px;display:inline-block;color:#82FA58;font:50px menlo,monaco,monospace;background-color:#000;}.light.jsx-2115298601{background-color:#999;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHMvQ2xvY2suanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBUWdCLEFBR3NCLEFBUVMsYUFQRCxTQVF2QixZQVBnQixjQUNxQixpQ0FDYixzQkFDeEIiLCJmaWxlIjoiY29tcG9uZW50cy9DbG9jay5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvZ2liYm9uc29mdGx0ZC9Eb2N1bWVudHMvZGV2ZWxvcG1lbnQvbXloYWNrcy9tb3ZpZXMtcGxhdGZvcm0vbW92aWVzLWFwcCIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XG5cbmNvbnN0IHBhZCA9IG4gPT4gKG4gPCAxMCA/IGAwJHtufWAgOiBuKTtcbmNvbnN0IGZvcm1hdCA9IHQgPT4gYCR7cGFkKHQuZ2V0VVRDSG91cnMoKSl9OiR7cGFkKHQuZ2V0VVRDTWludXRlcygpKX06JHtwYWQodC5nZXRVVENTZWNvbmRzKCkpfWA7XG5cbmV4cG9ydCBkZWZhdWx0ICh7IGxhc3RVcGRhdGUsIGxpZ2h0IH0pID0+IChcbiAgPGRpdiBjbGFzc05hbWU9e2xpZ2h0ID8gJ2xpZ2h0JyA6ICcnfT5cbiAgICB7Zm9ybWF0KG5ldyBEYXRlKGxhc3RVcGRhdGUpKX1cbiAgICA8c3R5bGUganN4PntgXG4gICAgICBkaXYge1xuICAgICAgICBwYWRkaW5nOiAxNXB4O1xuICAgICAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgICAgIGNvbG9yOiAjODJGQTU4O1xuICAgICAgICBmb250OiA1MHB4IG1lbmxvLCBtb25hY28sIG1vbm9zcGFjZTtcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogIzAwMDtcbiAgICAgIH1cblxuICAgICAgLmxpZ2h0IHtcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogIzk5OTtcbiAgICAgIH1cbiAgICBgfVxuICAgIDwvc3R5bGU+XG4gIDwvZGl2PlxuKTtcbiJdfQ== */\n/*@ sourceURL=components/Clock.js */'
     })
   );
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (_default);
-
-var format = function format(t) {
-  return pad(t.getUTCHours()) + ':' + pad(t.getUTCMinutes()) + ':' + pad(t.getUTCSeconds());
-};
-
-var pad = function pad(n) {
-  return n < 10 ? '0' + n : n;
-};
 ;
 
 (function () {
@@ -215,8 +214,8 @@ var pad = function pad(n) {
     return;
   }
 
-  reactHotLoader.register(format, 'format', '/Users/gibbonsoftltd/Documents/development/myhacks/movies-platform/movies-app/components/Clock.js');
   reactHotLoader.register(pad, 'pad', '/Users/gibbonsoftltd/Documents/development/myhacks/movies-platform/movies-app/components/Clock.js');
+  reactHotLoader.register(format, 'format', '/Users/gibbonsoftltd/Documents/development/myhacks/movies-platform/movies-app/components/Clock.js');
   reactHotLoader.register(_default, 'default', '/Users/gibbonsoftltd/Documents/development/myhacks/movies-platform/movies-app/components/Clock.js');
   leaveModule(module);
 })();
@@ -239,12 +238,12 @@ var pad = function pad(n) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__AddCount__ = __webpack_require__("./components/AddCount.js");
 var _jsxFileName = '/Users/gibbonsoftltd/Documents/development/myhacks/movies-platform/movies-app/components/Page.js';
 
-
 (function () {
   var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
   enterModule && enterModule(module);
 })();
+
 
 
 
@@ -258,7 +257,6 @@ var _default = Object(__WEBPACK_IMPORTED_MODULE_2_react_redux__["connect"])(func
       linkTo = _ref.linkTo,
       lastUpdate = _ref.lastUpdate,
       light = _ref.light;
-
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'div',
     {
@@ -305,8 +303,7 @@ var _default = Object(__WEBPACK_IMPORTED_MODULE_2_react_redux__["connect"])(func
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'a',
-          {
-            __source: {
+          { href: '/', __source: {
               fileName: _jsxFileName,
               lineNumber: 13
             }
@@ -9232,9 +9229,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_redux__ = __webpack_require__("./node_modules/redux/es/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__store__ = __webpack_require__("./store.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_next_redux_wrapper__ = __webpack_require__("./node_modules/next-redux-wrapper/src/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_next_redux_wrapper___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_next_redux_wrapper__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_redux_wrapper__ = __webpack_require__("./node_modules/next-redux-wrapper/src/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_redux_wrapper___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_next_redux_wrapper__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__store__ = __webpack_require__("./store.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_Page__ = __webpack_require__("./components/Page.js");
 var _jsxFileName = '/Users/gibbonsoftltd/Documents/development/myhacks/movies-platform/movies-app/pages/index.js';
 
@@ -9297,8 +9294,8 @@ var Counter = function (_React$Component) {
       var store = _ref.store,
           isServer = _ref.isServer;
 
-      store.dispatch(Object(__WEBPACK_IMPORTED_MODULE_2__store__["c" /* serverRenderClock */])(isServer));
-      store.dispatch(Object(__WEBPACK_IMPORTED_MODULE_2__store__["a" /* addCount */])());
+      store.dispatch(Object(__WEBPACK_IMPORTED_MODULE_3__store__["c" /* serverRenderClock */])(isServer));
+      store.dispatch(Object(__WEBPACK_IMPORTED_MODULE_3__store__["a" /* addCount */])());
       return { isServer: isServer };
     }
   }]);
@@ -9308,12 +9305,12 @@ var Counter = function (_React$Component) {
 
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
   return {
-    addCount: Object(__WEBPACK_IMPORTED_MODULE_1_redux__["bindActionCreators"])(__WEBPACK_IMPORTED_MODULE_2__store__["a" /* addCount */], dispatch),
-    startClock: Object(__WEBPACK_IMPORTED_MODULE_1_redux__["bindActionCreators"])(__WEBPACK_IMPORTED_MODULE_2__store__["d" /* startClock */], dispatch)
+    addCount: Object(__WEBPACK_IMPORTED_MODULE_1_redux__["bindActionCreators"])(__WEBPACK_IMPORTED_MODULE_3__store__["a" /* addCount */], dispatch),
+    startClock: Object(__WEBPACK_IMPORTED_MODULE_1_redux__["bindActionCreators"])(__WEBPACK_IMPORTED_MODULE_3__store__["d" /* startClock */], dispatch)
   };
 };
 
-var _default = __WEBPACK_IMPORTED_MODULE_3_next_redux_wrapper___default()(__WEBPACK_IMPORTED_MODULE_2__store__["b" /* initStore */], null, mapDispatchToProps)(Counter);
+var _default = __WEBPACK_IMPORTED_MODULE_2_next_redux_wrapper___default()(__WEBPACK_IMPORTED_MODULE_3__store__["b" /* initStore */], null, mapDispatchToProps)(Counter);
 
 /* harmony default export */ __webpack_exports__["default"] = (_default);
 ;
@@ -9390,9 +9387,10 @@ var exampleInitialState = {
 var actionTypes = {
   ADD: 'ADD',
   TICK: 'TICK'
+};
 
-  // REDUCERS
-};var reducer = function reducer() {
+// REDUCERS
+var reducer = function reducer() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : exampleInitialState;
   var action = arguments[1];
 
@@ -9400,9 +9398,7 @@ var actionTypes = {
     case actionTypes.TICK:
       return Object.assign({}, state, { lastUpdate: action.ts, light: !!action.light });
     case actionTypes.ADD:
-      return Object.assign({}, state, {
-        count: state.count + 1
-      });
+      return Object.assign({}, state, { count: state.count + 1 });
     default:
       return state;
   }
@@ -9431,7 +9427,6 @@ var addCount = function addCount() {
 
 var initStore = function initStore() {
   var initialState = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : exampleInitialState;
-
   return Object(__WEBPACK_IMPORTED_MODULE_0_redux__["createStore"])(reducer, initialState, Object(__WEBPACK_IMPORTED_MODULE_1_redux_devtools_extension__["composeWithDevTools"])(Object(__WEBPACK_IMPORTED_MODULE_0_redux__["applyMiddleware"])(__WEBPACK_IMPORTED_MODULE_2_redux_thunk___default.a)));
 };
 ;
@@ -9460,7 +9455,7 @@ var initStore = function initStore() {
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./pages/index.js");
@@ -9468,7 +9463,7 @@ module.exports = __webpack_require__("./pages/index.js");
 
 /***/ })
 
-},[2])
+},[3])
           return { page: comp.default }
         })
       ;
