@@ -1,34 +1,22 @@
 import React from 'react';
-import { bindActionCreators } from 'redux';
 import withRedux from 'next-redux-wrapper';
-import { initStore, startClock, addCount, serverRenderClock } from '../store';
-import Page from '../components/Page';
+import MoviesList from '../components/Views/MoviesList/container';
+import { initStore } from '../store';
 
-class Counter extends React.Component {
-  static getInitialProps({ store, isServer }) {
-    store.dispatch(serverRenderClock(isServer));
-    store.dispatch(addCount());
+class Main extends React.Component {
+  static getInitialProps({ isServer }) {
     return { isServer };
-  }
-
-  componentDidMount() {
-    this.timer = this.props.startClock();
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.timer);
   }
 
   render() {
     return (
-      <Page title="Index Page" linkTo="/other" />
+      <MoviesList isServer={this.props.isServer} />
     );
   }
 }
 
-const mapDispatchToProps = (dispatch) => ({
-  addCount: bindActionCreators(addCount, dispatch),
-  startClock: bindActionCreators(startClock, dispatch),
-});
+const mapStateToProps = () => ({});
 
-export default withRedux(initStore, null, mapDispatchToProps)(Counter);
+const mapDispatchToProps = () => ({ });
+
+export default withRedux(initStore, mapStateToProps, mapDispatchToProps)(Main);
