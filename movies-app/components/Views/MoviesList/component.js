@@ -1,7 +1,7 @@
 import React from 'react';
 
-const MoviesList = () => (
-  <div>This is an example</div>
+const MoviesList = ({ movies = [] }) => (
+  <div>About to display {movies.length} movies...</div>
 );
 
 export default MoviesList;
