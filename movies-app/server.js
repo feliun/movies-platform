@@ -9,6 +9,8 @@ app.prepare()
   .then(() => {
     const server = express();
 
+    server.get('/movie/:id', (req, res) => app.render(req, res, '/movie', { id: req.params.id }));
+
     server.get('*', (req, res) => handle(req, res));
 
     server.listen(4000, (err) => {
