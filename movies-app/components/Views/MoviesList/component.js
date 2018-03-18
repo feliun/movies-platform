@@ -1,14 +1,10 @@
 import React from 'react';
-import Movie from '../Movie/container';
-import './moviesList.css';
+import MoviePreview from '../MoviePreview/container';
 
 const MoviesList = ({ movies = [] }) => (
   <div>
     <style>{
         `
-        #movie-list {
-          background-color: black;
-        }
         .row {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -21,9 +17,9 @@ const MoviesList = ({ movies = [] }) => (
         `
       }
     </style>
-    <section id="movie-list" className="row">
+    <section className="row">
       {
-        movies.map((movie) => <Movie key={movie.id} movie={movie} />)
+        movies.map((movie) => <MoviePreview key={movie.id} movie={movie} />)
       }
     </section>
   </div>

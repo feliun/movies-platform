@@ -12,7 +12,19 @@ class Main extends React.Component {
 
   render() {
     return (
-      <MoviesList />
+      <div>
+        <style>{
+        `
+          body {
+            background-color: black;
+            height: 100%;
+            width: 100%;
+          }
+        `
+        }
+        </style>
+        <MoviesList />
+      </div>
     );
   }
 }
