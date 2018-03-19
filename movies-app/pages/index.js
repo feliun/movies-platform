@@ -14,16 +14,6 @@ class MainScreen extends React.Component {
   render() {
     return (
       <Layout>
-        <style>{
-        `
-          body {
-            background-color: black;
-            height: 100%;
-            width: 100%;
-          }
-        `
-        }
-        </style>
         <MoviesList />
       </Layout>
     );

@@ -31,7 +31,7 @@ const MoviePreview = ({ movie }) => (
         `
       }
     </style>
-    <section className="movie">
+    <section>
       <article>
         <a href={`/movie/${movie.id}`}>
           <img src={movie.images.poster} alt="" className="img-responsive movie-picture" />

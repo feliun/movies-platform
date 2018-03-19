@@ -4,6 +4,16 @@ import Head from './Head';
 
 const Main = (props) => (
   <div>
+    <style>{
+      `
+        body {
+          background-color: black;
+          height: 100%;
+          width: 100%;
+        }
+      `
+    }
+    </style>
     <Head />
     <div className="container-fluid">
       <Header />
