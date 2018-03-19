@@ -1,11 +1,13 @@
 import React from 'react';
+import withRedux from 'next-redux-wrapper';
 import Layout from '../components/Layout/Main';
+import MovieDetail from '../components/Views/MovieDetail/container';
 import allMovies from '../fixtures/movies.json';
+import { initStore } from '../store';
 
 const MovieScreen = ({ movie }) => (
   <Layout>
-    Rendering movie {movie.title}...
-    {movie.synopsis}
+    <MovieDetail {...movie} />
   </Layout>
 );
 
@@ -15,4 +17,8 @@ MovieScreen.getInitialProps = (context) => {
   return { movie };
 };
 
-export default MovieScreen;
+const mapStateToProps = ({ light, movies }) => ({ light, movies });
+
+const mapDispatchToProps = () => ({});
+
+export default withRedux(initStore, mapStateToProps, mapDispatchToProps)(MovieScreen);
