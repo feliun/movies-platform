@@ -1,11 +1,12 @@
 import React from 'react';
+import Layout from '../components/Layout/Main';
 import allMovies from '../fixtures/movies.json';
 
 const MovieScreen = ({ movie }) => (
-  <div>
+  <Layout>
     Rendering movie {movie.title}...
     {movie.synopsis}
-  </div>
+  </Layout>
 );
 
 MovieScreen.getInitialProps = (context) => {

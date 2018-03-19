@@ -1,6 +1,7 @@
 import React from 'react';
 import withRedux from 'next-redux-wrapper';
 import MoviesList from '../components/Views/MoviesList/container';
+import Layout from '../components/Layout/Main';
 import allMovies from '../fixtures/movies.json';
 import { initStore, updateMovies } from '../store';
 
@@ -12,7 +13,7 @@ class MainScreen extends React.Component {
 
   render() {
     return (
-      <div>
+      <Layout>
         <style>{
         `
           body {
@@ -24,7 +25,7 @@ class MainScreen extends React.Component {
         }
         </style>
         <MoviesList />
-      </div>
+      </Layout>
     );
   }
 }
