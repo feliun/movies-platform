@@ -10,6 +10,7 @@ const Main = (props) => (
           background-color: black;
           height: 100%;
           width: 100%;
+          font-family: 'Muli', sans-serif;
         }
       `
     }

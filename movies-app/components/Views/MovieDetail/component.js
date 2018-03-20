@@ -1,49 +1,63 @@
 import React from 'react';
 
-const MovieDetail = ({ title, synopsis, images }) => (
-  <div className="container">
+const MovieDetail = ({ title, synopsis, year, images, rating, runtime, released, trailer, genres }) => (
+  <div>
     <style>{
       `
+      .movie-detail {
+        margin-top: 30px;
+        margin-left: 10px;
+      }
       #movie-detail-pic {
         width: 250px;
+        border: 1px solid gray;
+        border-radius: 5px;
+      }
+      h1 {
+        font-size: 20px;
+        color: white;
+      }
+      p {
+        font-size: 12px;
+        color: white;
+        text-align: justify;
       }
       `
     }
     </style>
-    <div className="row">
-      <div className="col-xs-4 item-photo">
+    <div className="row movie-detail">
+      <div className="col-4">
         <img id="movie-detail-pic" alt={title} src={images.banner} />
       </div>
-      <div className="col-xs-5">
-        <h3>{title}</h3>
-        <h5>{synopsis}</h5>
-        <h6 className="title-price"><small>PRECIO OFERTA</small></h6>
-        <h3>U$S 399</h3>
-        <div className="section">
-          <h6 className="title-attr"><small>COLOR</small></h6>
-          <div>
-            <div className="attr" />
-            <div className="attr" />
+      <div className="col-8">
+        <div className="row">
+          <div className="col-12">
+            <h1>{title}</h1>
           </div>
         </div>
-        <div className="section">
-          <h6 className="title-attr"><small>CAPACIDAD</small></h6>
-          <div>
-            <div className="attr2">16 GB</div>
-            <div className="attr2">32 GB</div>
+        <div className="row">
+          <div className="col-1">
+            <p>{year}</p>
+          </div>
+          <div className="col-2">
+            <p>{runtime} min</p>
+          </div>
+          <div className="col-1">
+            <p>{rating.percentage}</p>
           </div>
         </div>
-        <div className="section">
-          <h6 className="title-attr"><small>CANTIDAD</small></h6>
-          <div>
-            <div className="btn-minus"><span className="glyphicon glyphicon-minus" /></div>
-            <input value="1" />
-            <div className="btn-plus"><span className="glyphicon glyphicon-plus" /></div>
+        <div className="row">
+          <div className="col-1">
+            <p>{genres[0]}</p>
+          </div>
+          <div className="col-1">
+            <p>{genres[1]}</p>
           </div>
         </div>
-        <div className="section">
-          <button className="btn btn-success"><span className="glyphicon glyphicon-shopping-cart" aria-hidden="true" /> Agregar al carro</button>
-          <h6><a href="#"><span className="glyphicon glyphicon-heart-empty" /> Agregar a lista de deseos</a></h6>
+        <div className="row">
+          <div className="col-12">
+            <p>{synopsis}</p>
+          </div>
         </div>
       </div>
     </div>
