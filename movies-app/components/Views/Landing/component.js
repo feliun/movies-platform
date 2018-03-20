@@ -7,6 +7,14 @@ const Landing = () => (
       body {
         overflow-x: hidden;
         font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        margin: 0;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        text-align: left;
+        background-color: #fff;
       }
 
       a {
@@ -89,36 +97,69 @@ const Landing = () => (
       }
 
       .btn-block {
-          display: block;
-          width: 100%;
+        display: block;
+        width: 100%;
       }
       .btn-group-lg>.btn, .btn-lg {
-          padding: .5rem 1rem;
-          font-size: 1.25rem;
-          line-height: 1.5;
-          border-radius: .3rem;
+        padding: .5rem 1rem;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        border-radius: .3rem;
       }
       .btn-primary {
-          color: #fff;
-          background-color: #007bff;
-          border-color: #007bff;
+        color: #fff;
+        background-color: #007bff;
+        border-color: #007bff;
       }
       .btn {
-          display: inline-block;
-          font-weight: 400;
-          text-align: center;
-          white-space: nowrap;
-          vertical-align: middle;
-          -webkit-user-select: none;
-          -moz-user-select: none;
-          -ms-user-select: none;
-          user-select: none;
-          border: 1px solid transparent;
-          padding: .375rem .75rem;
-          font-size: 1rem;
-          line-height: 1.5;
-          border-radius: .25rem;
-          transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+      }
+
+      .text-primary {
+        color: #fed136 !important;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-weight: 700;
+        font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      }
+
+      section {
+        padding: 100px 0;
+      }
+
+      section h2.section-heading {
+        font-size: 25px;
+        margin-top: 0;
+        margin-bottom: 15px;
+      }
+
+      section h3.section-subheading {
+        font-size: 16px;
+        font-weight: 400;
+        font-style: italic;
+        margin-bottom: 75px;
+        text-transform: none;
+        font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
       }
     `}
     </style>
@@ -144,11 +185,11 @@ const Landing = () => (
         </div>
       </header>
 
-      {/* <section id="services">
+      <section id="services">
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
-              <h2 className="section-heading text-uppercase">Services</h2>
+              <h2 className="section-heading text-uppercase">Features</h2>
               <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
             </div>
           </div>
@@ -179,104 +220,8 @@ const Landing = () => (
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
-      {/* <section className="bg-light" id="portfolio">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12 text-center">
-              <h2 className="section-heading text-uppercase">Portfolio</h2>
-              <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-md-4 col-sm-6 portfolio-item">
-              <a className="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                <div className="portfolio-hover">
-                  <div className="portfolio-hover-content">
-                    <i className="fa fa-plus fa-3x" />
-                  </div>
-                </div>
-                <img className="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="" />
-              </a>
-              <div className="portfolio-caption">
-                <h4>Threads</h4>
-                <p className="text-muted">Illustration</p>
-              </div>
-            </div>
-            <div className="col-md-4 col-sm-6 portfolio-item">
-              <a className="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                <div className="portfolio-hover">
-                  <div className="portfolio-hover-content">
-                    <i className="fa fa-plus fa-3x" />
-                  </div>
-                </div>
-                <img className="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="" />
-              </a>
-              <div className="portfolio-caption">
-                <h4>Explore</h4>
-                <p className="text-muted">Graphic Design</p>
-              </div>
-            </div>
-            <div className="col-md-4 col-sm-6 portfolio-item">
-              <a className="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-                <div className="portfolio-hover">
-                  <div className="portfolio-hover-content">
-                    <i className="fa fa-plus fa-3x" />
-                  </div>
-                </div>
-                <img className="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="" />
-              </a>
-              <div className="portfolio-caption">
-                <h4>Finish</h4>
-                <p className="text-muted">Identity</p>
-              </div>
-            </div>
-            <div className="col-md-4 col-sm-6 portfolio-item">
-              <a className="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-                <div className="portfolio-hover">
-                  <div className="portfolio-hover-content">
-                    <i className="fa fa-plus fa-3x" />
-                  </div>
-                </div>
-                <img className="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="" />
-              </a>
-              <div className="portfolio-caption">
-                <h4>Lines</h4>
-                <p className="text-muted">Branding</p>
-              </div>
-            </div>
-            <div className="col-md-4 col-sm-6 portfolio-item">
-              <a className="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-                <div className="portfolio-hover">
-                  <div className="portfolio-hover-content">
-                    <i className="fa fa-plus fa-3x" />
-                  </div>
-                </div>
-                <img className="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="" />
-              </a>
-              <div className="portfolio-caption">
-                <h4>Southwest</h4>
-                <p className="text-muted">Website Design</p>
-              </div>
-            </div>
-            <div className="col-md-4 col-sm-6 portfolio-item">
-              <a className="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-                <div className="portfolio-hover">
-                  <div className="portfolio-hover-content">
-                    <i className="fa fa-plus fa-3x" />
-                  </div>
-                </div>
-                <img className="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="" />
-              </a>
-              <div className="portfolio-caption">
-                <h4>Window</h4>
-                <p className="text-muted">Photography</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       {/* <section id="about">
         <div className="container">
