@@ -29,7 +29,7 @@ const Landing = () => (
         text-align: center;
         color: white;
         background-image: url("https://popcorn-time.to/images/bg-header.jpg");
-        height: 100%
+        height: 400px;
         background-repeat: no-repeat;
         background-attachment: scroll;
         background-position: center center;
@@ -161,6 +161,192 @@ const Landing = () => (
         text-transform: none;
         font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
       }
+
+      .timeline {
+        position: relative;
+        padding: 0;
+        list-style: none;
+      }
+
+      .timeline:before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 40px;
+        width: 2px;
+        margin-left: -1.5px;
+        content: '';
+        background-color: #e9ecef;
+      }
+
+      .timeline > li {
+        position: relative;
+        min-height: 50px;
+        margin-bottom: 50px;
+      }
+
+      .timeline > li:after, .timeline > li:before {
+        display: table;
+        content: ' ';
+      }
+
+      .timeline > li:after {
+        clear: both;
+      }
+
+      .timeline > li .timeline-panel {
+        position: relative;
+        float: right;
+        width: 100%;
+        padding: 0 20px 0 100px;
+        text-align: left;
+      }
+
+      .timeline > li .timeline-panel:before {
+        right: auto;
+        left: -15px;
+        border-right-width: 15px;
+        border-left-width: 0;
+      }
+
+      .timeline > li .timeline-panel:after {
+        right: auto;
+        left: -14px;
+        border-right-width: 14px;
+        border-left-width: 0;
+      }
+
+      .timeline > li .timeline-image {
+        position: absolute;
+        z-index: 100;
+        left: 0;
+        width: 80px;
+        height: 80px;
+        margin-left: 0;
+        text-align: center;
+        color: white;
+        border: 7px solid #e9ecef;
+        border-radius: 100%;
+        background-color: #fed136;
+      }
+
+      .timeline > li .timeline-image h4 {
+        font-size: 10px;
+        line-height: 14px;
+        margin-top: 12px;
+      }
+
+      .timeline > li.timeline-inverted > .timeline-panel {
+        float: right;
+        padding: 0 20px 0 100px;
+        text-align: left;
+      }
+
+      .timeline > li.timeline-inverted > .timeline-panel:before {
+        right: auto;
+        left: -15px;
+        border-right-width: 15px;
+        border-left-width: 0;
+      }
+
+      .timeline > li.timeline-inverted > .timeline-panel:after {
+        right: auto;
+        left: -14px;
+        border-right-width: 14px;
+        border-left-width: 0;
+      }
+
+      .timeline > li:last-child {
+        margin-bottom: 0;
+      }
+
+      .timeline .timeline-heading h4 {
+        margin-top: 0;
+        color: inherit;
+      }
+
+      .timeline .timeline-heading h4.subheading {
+        text-transform: none;
+      }
+
+      .timeline .timeline-body > ul,
+      .timeline .timeline-body > p {
+        margin-bottom: 0;
+      }
+
+      @media (min-width: 768px) {
+        .timeline:before {
+          left: 50%;
+        }
+        .timeline > li {
+          min-height: 100px;
+          margin-bottom: 100px;
+        }
+        .timeline > li .timeline-panel {
+          float: left;
+          width: 41%;
+          padding: 0 20px 20px 30px;
+          text-align: right;
+        }
+        .timeline > li .timeline-image {
+          left: 50%;
+          width: 100px;
+          height: 100px;
+          margin-left: -50px;
+        }
+        .timeline > li .timeline-image h4 {
+          font-size: 13px;
+          line-height: 18px;
+          margin-top: 16px;
+        }
+        .timeline > li.timeline-inverted > .timeline-panel {
+          float: right;
+          padding: 0 30px 20px 20px;
+          text-align: left;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .timeline > li {
+          min-height: 150px;
+        }
+        .timeline > li .timeline-panel {
+          padding: 0 20px 20px;
+        }
+        .timeline > li .timeline-image {
+          width: 150px;
+          height: 150px;
+          margin-left: -75px;
+        }
+        .timeline > li .timeline-image h4 {
+          font-size: 18px;
+          line-height: 26px;
+          margin-top: 30px;
+        }
+        .timeline > li.timeline-inverted > .timeline-panel {
+          padding: 0 20px 20px;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .timeline > li {
+          min-height: 170px;
+        }
+        .timeline > li .timeline-panel {
+          padding: 0 20px 20px 100px;
+        }
+        .timeline > li .timeline-image {
+          width: 170px;
+          height: 170px;
+          margin-left: -85px;
+        }
+        .timeline > li .timeline-image h4 {
+          margin-top: 40px;
+        }
+        .timeline > li.timeline-inverted > .timeline-panel {
+          padding: 0 100px 20px 20px;
+        }
+      }
     `}
     </style>
     <Head />
@@ -222,12 +408,11 @@ const Landing = () => (
         </div>
       </section>
 
-
-      {/* <section id="about">
+      <section id="about">
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
-              <h2 className="section-heading text-uppercase">About</h2>
+              <h2 className="section-heading text-uppercase">The Stack</h2>
               <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
             </div>
           </div>
@@ -240,8 +425,7 @@ const Landing = () => (
                   </div>
                   <div className="timeline-panel">
                     <div className="timeline-heading">
-                      <h4>2009-2011</h4>
-                      <h4 className="subheading">Our Humble Beginnings</h4>
+                      <h4 className="subheading">React & Redux</h4>
                     </div>
                     <div className="timeline-body">
                       <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
@@ -254,8 +438,7 @@ const Landing = () => (
                   </div>
                   <div className="timeline-panel">
                     <div className="timeline-heading">
-                      <h4>March 2011</h4>
-                      <h4 className="subheading">An Agency is Born</h4>
+                      <h4 className="subheading">Node JS REST API</h4>
                     </div>
                     <div className="timeline-body">
                       <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
@@ -268,8 +451,7 @@ const Landing = () => (
                   </div>
                   <div className="timeline-panel">
                     <div className="timeline-heading">
-                      <h4>December 2012</h4>
-                      <h4 className="subheading">Transition to Full Service</h4>
+                      <h4 className="subheading">Mongo DB</h4>
                     </div>
                     <div className="timeline-body">
                       <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
@@ -282,8 +464,20 @@ const Landing = () => (
                   </div>
                   <div className="timeline-panel">
                     <div className="timeline-heading">
-                      <h4>July 2014</h4>
-                      <h4 className="subheading">Phase Two Expansion</h4>
+                      <h4 className="subheading">microservices</h4>
+                    </div>
+                    <div className="timeline-body">
+                      <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div className="timeline-image">
+                    <img className="rounded-circle img-fluid" src="img/about/3.jpg" alt="" />
+                  </div>
+                  <div className="timeline-panel">
+                    <div className="timeline-heading">
+                      <h4 className="subheading">CI/CD</h4>
                     </div>
                     <div className="timeline-body">
                       <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
@@ -292,9 +486,48 @@ const Landing = () => (
                 </li>
                 <li className="timeline-inverted">
                   <div className="timeline-image">
-                    <h4>Be Part
-                      <br />Of Our
-                      <br />Story!
+                    <img className="rounded-circle img-fluid" src="img/about/4.jpg" alt="" />
+                  </div>
+                  <div className="timeline-panel">
+                    <div className="timeline-heading">
+                      <h4 className="subheading">Docker</h4>
+                    </div>
+                    <div className="timeline-body">
+                      <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div className="timeline-image">
+                    <img className="rounded-circle img-fluid" src="img/about/3.jpg" alt="" />
+                  </div>
+                  <div className="timeline-panel">
+                    <div className="timeline-heading">
+                      <h4 className="subheading">Terraform</h4>
+                    </div>
+                    <div className="timeline-body">
+                      <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    </div>
+                  </div>
+                </li>
+                <li className="timeline-inverted">
+                  <div className="timeline-image">
+                    <img className="rounded-circle img-fluid" src="img/about/4.jpg" alt="" />
+                  </div>
+                  <div className="timeline-panel">
+                    <div className="timeline-heading">
+                      <h4 className="subheading">AWS</h4>
+                    </div>
+                    <div className="timeline-body">
+                      <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    </div>
+                  </div>
+                </li>
+                <li className="timeline-inverted">
+                  <div className="timeline-image">
+                    <h4>And
+                      <br />many
+                      <br />more!
                     </h4>
                   </div>
                 </li>
@@ -302,7 +535,7 @@ const Landing = () => (
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* <section className="bg-light" id="team">
         <div className="container">
