@@ -1,5 +1,11 @@
+import YouTube from 'react-youtube';
 import moment from 'moment';
 import React from 'react';
+
+const videoOpts = {
+  height: '235',
+  width: '100%',
+};
 
 const MovieDetail = ({ id, title, synopsis, year, images, rating, runtime, released, trailer, genres }) => (
   <div>
@@ -76,6 +82,14 @@ const MovieDetail = ({ id, title, synopsis, year, images, rating, runtime, relea
         <div className="row">
           <div className="col-12">
             <p>{synopsis}</p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12">
+            <YouTube
+              videoId={trailer.split('?v=')[1]}
+              opts={videoOpts}
+            />
           </div>
         </div>
       </div>
