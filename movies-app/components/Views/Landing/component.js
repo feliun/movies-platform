@@ -82,9 +82,9 @@ const model = {
     ],
   },
   team: {
-    title: 'Our Amazing Team',
-    subtitle: 'Lorem ipsum dolor sit amet consectetur.',
-    bottom: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.',
+    title: 'About the author',
+    subtitle: 'The eyes behind the code',
+    bottom: 'Microservices advocate, TDD practitioner, full stack engineer and continuous learner. Digital transformer and MD at GuideSmiths Spain',
     members: [
       {
         name: 'Felipe Polo',

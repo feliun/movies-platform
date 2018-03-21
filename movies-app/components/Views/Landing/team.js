@@ -17,6 +17,27 @@ const Team = ({ data }) => (
         text-transform: none;
         font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
       }
+
+      .team-member {
+        margin-bottom: 50px;
+        text-align: center;
+      }
+
+      .team-member img {
+        width: 225px;
+        height: 225px;
+        border: 7px solid #fff;
+      }
+
+      .team-member h4 {
+        margin-top: 25px;
+        margin-bottom: 0;
+        text-transform: none;
+      }
+
+      .team-member p {
+        margin-top: 0;
+      }
     `
     }
     </style>
