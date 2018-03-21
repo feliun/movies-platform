@@ -114,39 +114,6 @@ const Header = ({ data }) => (
         border-radius: .25rem;
         transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
       }
-
-      .text-primary {
-        color: #fed136 !important;
-      }
-
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-weight: 700;
-        font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      }
-
-      section {
-        padding: 100px 0;
-      }
-
-      section h2.section-heading {
-        font-size: 25px;
-        margin-top: 0;
-        margin-bottom: 15px;
-      }
-
-      section h3.section-subheading {
-        font-size: 16px;
-        font-weight: 400;
-        font-style: italic;
-        margin-bottom: 75px;
-        text-transform: none;
-        font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      }
     `}
     </style>
     <header className="masthead">
