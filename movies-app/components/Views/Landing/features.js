@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Features = ({ data }) => (
-  <section id="services">
+  <section id="features">
     <style>{`
       section h2.section-heading {
         font-size: 25px;
