@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Features = ({ data }) => (
+const Timeline = ({ data }) => (
   <section id="features">
     <style>{`
       .timeline {
@@ -233,4 +233,4 @@ const Features = ({ data }) => (
   </section>
 );
 
-export default Features;
+export default Timeline;
