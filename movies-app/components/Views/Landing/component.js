@@ -4,6 +4,7 @@ import Features from './Features';
 import Timeline from './Timeline';
 import Team from './Team';
 import Footer from './Footer';
+import './style.scss';
 
 const model = {
   header: {
@@ -107,39 +108,6 @@ const model = {
 
 const Landing = () => (
   <div>
-    <style>{`
-      body {
-        overflow-x: hidden;
-        font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        margin: 0;
-        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 1.5;
-        color: #212529;
-        text-align: left;
-        background-color: #fff;
-      }
-
-      .text-primary {
-        color: #fed136 !important;
-      }
-
-      section {
-        padding: 100px 0;
-      }
-
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-weight: 700;
-        font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      }
-    `}
-    </style>
     <div id="page-top">
       <Header data={model.header} />
       <Features data={model.features} />

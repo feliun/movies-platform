@@ -1,25 +1,8 @@
 import React from 'react';
+import './style.scss';
 
 const Features = ({ data }) => (
   <section id="features">
-    <style>{`
-      section h2.section-heading {
-        font-size: 25px;
-        margin-top: 0;
-        margin-bottom: 15px;
-      }
-
-      section h3.section-subheading {
-        font-size: 16px;
-        font-weight: 400;
-        font-style: italic;
-        margin-bottom: 75px;
-        text-transform: none;
-        font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      }
-    `
-    }
-    </style>
     <div className="container">
       <div className="row">
         <div className="col-lg-12 text-center">
