@@ -1,5 +1,4 @@
 import React from 'react';
-import Head from '../../Layout/Head';
 import Header from './header';
 import Features from './features';
 import Timeline from './timeline';
@@ -141,7 +140,6 @@ const Landing = () => (
       }
     `}
     </style>
-    <Head />
     <div id="page-top">
       <Header data={model.header} />
       <Features data={model.features} />
