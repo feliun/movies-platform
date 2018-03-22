@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Team = ({ data }) => (
-  <section id="about" className="bg-light">
+  <section id="team" className="bg-light">
     <div className="container">
       <div className="row">
         <div className="col-lg-12 text-center">

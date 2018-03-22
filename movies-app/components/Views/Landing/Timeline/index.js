@@ -2,7 +2,7 @@ import React from 'react';
 import './style.scss';
 
 const Timeline = ({ data }) => (
-  <section id="features">
+  <section id="timeline">
     <div className="container">
       <div className="row">
         <div className="col-lg-12 text-center">
