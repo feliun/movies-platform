@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from './header';
-import Features from './features';
-import Timeline from './timeline';
-import Team from './team';
-import Footer from './footer';
+import Header from './Header';
+import Features from './Features';
+import Timeline from './Timeline';
+import Team from './Team';
+import Footer from './Footer';
 
 const model = {
   header: {

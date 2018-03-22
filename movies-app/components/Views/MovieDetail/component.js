@@ -1,6 +1,7 @@
 import YouTube from 'react-youtube';
 import moment from 'moment';
 import React from 'react';
+import './style.scss';
 
 const videoOpts = {
   height: '235',
@@ -9,55 +10,6 @@ const videoOpts = {
 
 const MovieDetail = ({ id, title, synopsis, year, images, rating, runtime, released, trailer, genres }) => (
   <div>
-    <style>{
-      `
-      .movie-detail {
-        margin-top: 30px;
-        margin-left: 10px;
-      }
-      #movie-detail-pic {
-        width: 250px;
-        border: 1px solid gray;
-        border-radius: 5px;
-      }
-      #imdb-link-img {
-        width: 20px;
-      }
-      #title {
-        padding-left: 0px;
-      }
-      h1 {
-        font-size: 25px;
-        color: white;
-      }
-      #year {
-        font-size: 15px;
-        color: gray;
-      }
-      #rating {
-        font-size: 18px;
-      }
-      #imdb-score-img {
-        width: 15px;
-      }
-      p {
-        font-size: 10px;
-        color: white;
-        text-align: justify;
-      }
-      #movie-details-info {
-        color: gray;
-        font-size: 9px;
-      }
-      #movie-stats {
-        color: gray;
-        font-size: 9px;
-        text-align: center;
-        margin-top: 10px;
-      }
-      `
-    }
-    </style>
     <div className="row movie-detail">
       <div className="col-12">
         <div className="row">
