@@ -7,7 +7,7 @@ const Features = ({ data }) => (
       <div className="row">
         <div className="col-lg-12 text-center">
           <h2 className="section-heading text-uppercase">{data.title}</h2>
-          <h3 className="section-subheading text-muted">{data.subtitle}</h3>
+          <h3 className="section-subheading">{data.subtitle}</h3>
         </div>
       </div>
       <div className="row text-center">
@@ -19,7 +19,7 @@ const Features = ({ data }) => (
                 <i className={`fa ${feat.icon} fa-stack-1x fa-inverse`} />
               </span>
               <h4 className="service-heading">{feat.title}</h4>
-              <p className="text-muted">{feat.description}</p>
+              <p>{feat.description}</p>
             </div>
           ))
         }

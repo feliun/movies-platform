@@ -7,7 +7,7 @@ const Timeline = ({ data }) => (
       <div className="row">
         <div className="col-lg-12 text-center">
           <h2 className="section-heading text-uppercase">{data.title}</h2>
-          <h3 className="section-subheading text-muted">{data.subtitle}</h3>
+          <h3 className="section-subheading">{data.subtitle}</h3>
         </div>
       </div>
       <div className="row">
@@ -24,7 +24,7 @@ const Timeline = ({ data }) => (
                       <h4 className="subheading">{item.title}</h4>
                     </div>
                     <div className="timeline-body">
-                      <p className="text-muted">{item.description}</p>
+                      <p>{item.description}</p>
                     </div>
                   </div>
                 </li>

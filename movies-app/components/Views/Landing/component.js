@@ -9,100 +9,98 @@ import './style.scss';
 const model = {
   header: {
     title: 'The movies platform',
-    search: {
-      title: 'Find a movie...',
-      button: 'Search!',
-    },
+    subtitle: 'A fully-fledged microservices platform',
+    button: 'Browse',
   },
   features: {
     title: 'Features',
-    subtitle: 'Lorem ipsum dolor sit amet consectetur.',
+    subtitle: 'microservices bring some benefits',
     values: [
       {
-        title: 'E-commerce',
+        title: 'Scalable',
         icon: 'fa-shopping-cart',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.',
+        description: 'Demanding services can be deployed in multiple servers to enhance performance',
       },
       {
-        title: 'Responsive Design',
+        title: 'Resilient',
         icon: 'fa-laptop',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.',
+        description: 'Failure in one service does not impact other services. Replicas make high availability easier',
       },
       {
-        title: 'Web Security',
+        title: 'Decoupled',
         icon: 'fa-lock',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.',
+        description: 'Being independent services, they have less chances to impact each other. Plus, development can happen in parallel without much headache',
       },
     ],
   },
   timeline: {
     title: 'The Stack',
-    subtitle: 'Lorem ipsum dolor sit amet consectetur.',
+    subtitle: 'Some of the technologies used to build this platform',
     values: [
       {
         title: 'React & Redux',
         img: 'img/about/1.jpg',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!',
+        description: 'React is a JS library for building user interfaces. It makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.',
       },
       {
         title: 'Node JS REST API',
         img: 'img/about/1.jpg',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!',
+        description: 'Node.js is a JavaScript runtime built on Chrome\'s V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js\' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.',
       },
       {
         title: 'Mongo DB',
         img: 'img/about/1.jpg',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!',
+        description: 'MongoDB is a free and open-source cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents.',
       },
       {
         title: 'microservices',
         img: 'img/about/1.jpg',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!',
+        description: 'Microservices is a variant of the service-oriented architecture (SOA) architectural style that structures an application as a collection of loosely coupled services. In a microservices architecture, services should be fine-grained and the protocols should be lightweight.',
       },
       {
         title: 'CI/CD',
         img: 'img/about/1.jpg',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!',
+        description: 'Continuous integration (CI) is the practice of merging all developer working copies to a shared mainline several times a day. Its aim is to prevent integration problems. We used Travis as CI server for this platform.',
       },
       {
         title: 'Docker',
         img: 'img/about/1.jpg',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!',
+        description: 'Docker is the only container platform provider to address every application across the hybrid cloud. Docker enables true independence between applications and infrastructure and developers and IT ops to unlock their potential and creates a model for better collaboration and innovation.',
       },
       {
         title: 'Terraform',
         img: 'img/about/1.jpg',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!',
+        description: 'Terraform enables you to safely and predictably create, change, and improve infrastructure. It is an open source tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.',
       },
       {
         title: 'AWS',
         img: 'img/about/1.jpg',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!',
+        description: 'Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services.',
       },
     ],
   },
   team: {
     title: 'About the author',
-    subtitle: 'The eyes behind the code',
-    bottom: 'Microservices advocate, TDD practitioner, full stack engineer and continuous learner. Digital transformer and MD at GuideSmiths Spain',
+    subtitle: 'Microservices advocate, TDD practitioner, full stack engineer and continuous learner. Digital transformer and MD at GuideSmiths Spain',
+    bottom: '',
     members: [
       {
         name: 'Felipe Polo',
         position: 'Managing Director @GuideSmiths Spain',
-        img: 'img/team/1.jpg',
+        img: 'static/img/felipe.jpg',
         twitter: 'http://www.twitter.com/feliun',
-        linkedin: '',
-        github: '',
+        linkedin: 'https://www.linkedin.com/in/feliun/',
+        github: 'https://github.com/feliun',
       },
     ],
   },
   footer: {
-    copyright: 'Copyright &copy; GuideSmiths 2018',
+    copyright: 'Copyright© GuideSmiths',
     twitter: 'http://www.twitter.com/guidesmiths',
-    linkedin: '',
-    github: '',
-    privacy: '',
-    termsOfUse: '',
+    linkedin: 'https://www.linkedin.com/company/guidesmiths/',
+    github: 'https://github.com/guidesmiths',
+    privacy: 'https://www.guidesmiths.com/en/privacy-policy',
+    termsOfUse: 'https://www.guidesmiths.com/en/terms-and-conditions',
   },
 };
 

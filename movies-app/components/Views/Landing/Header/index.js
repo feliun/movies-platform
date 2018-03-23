@@ -7,18 +7,8 @@ const Header = ({ data }) => (
       <div className="container">
         <div className="intro-text">
           <div className="intro-lead-in">{data.title}</div>
-          <div className="col-md-10 col-lg-8 col-xl-7 mx-auto">
-            <form>
-              <div className="form-row">
-                <div className="col-12 col-md-9 mb-2 mb-md-0">
-                  <input type="text" className="form-control form-control-lg" placeholder={data.search.title} />
-                </div>
-                <div className="col-12 col-md-3">
-                  <a type="submit" href="/search" className="btn btn-block btn-lg btn-primary">{data.search.button}</a>
-                </div>
-              </div>
-            </form>
-          </div>
+          <div className="intro-heading text-uppercase">{data.subtitle}</div>
+          <a className="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="/search">{data.button}</a>
         </div>
       </div>
     </header>

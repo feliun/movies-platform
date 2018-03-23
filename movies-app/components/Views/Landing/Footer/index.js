@@ -6,7 +6,9 @@ const Footer = ({ data }) => (
     <div className="container">
       <div className="row">
         <div className="col-md-4">
-          <span className="copyright">{data.copyright}</span>
+          <span className="copyright">
+            <p>{data.copyright}</p>
+          </span>
         </div>
         <div className="col-md-4">
           <ul className="list-inline social-buttons">

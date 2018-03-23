@@ -33,79 +33,44 @@ header.masthead .intro-text .intro-lead-in {
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.form-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -5px;
-  margin-left: -5px;
+@media (min-width: 768px) {
+  header.masthead .intro-text .intro-heading {
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 75px;
+    margin-bottom: 50px;
+    font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+
+  }
 }
 
-.form-row>.col, .form-row>[class*=col-] {
-  padding-right: 5px;
-  padding-left: 5px;
+header.masthead .intro-text .intro-heading {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-bottom: 25px;
+  font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
-.form-control-lg, {
-  padding: .5rem 1rem;
-  font-size: 1.25rem;
-  line-height: 1.5;
-  border-radius: .3rem;
-}
-
-.form-control {
-  display: block;
-  width: 100%;
-  padding: .375rem .75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-radius: .25rem;
-  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+.text-uppercase {
+  text-transform: uppercase!important;
 }
 
 a, input {
   overflow: visible;
 }
-
 .btn:not(:disabled):not(.disabled) {
   cursor: pointer;
 }
-
-.btn-block {
-  display: block;
-  width: 100%;
-}
-.btn-group-lg>.btn, .btn-lg {
-  padding: .5rem 1rem;
-  font-size: 1.25rem;
-  line-height: 1.5;
-  border-radius: .3rem;
-}
 .btn-primary {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #fed136;
+  border-color: #fed136;
+}
+.btn-xl {
+  font-size: 18px;
+  padding: 20px 40px;
 }
 .btn {
-  display: inline-block;
-  font-weight: 400;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border: 1px solid transparent;
-  padding: .375rem .75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  border-radius: .25rem;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-weight: 700;
 }
