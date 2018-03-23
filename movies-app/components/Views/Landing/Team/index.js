@@ -21,17 +21,17 @@ const Team = ({ data }) => (
                 <ul className="list-inline social-buttons">
                   <li className="list-inline-item">
                     <a href={member.twitter} target="_blank">
-                      <i className="fa fa-twitter" />
+                      <i className="fab fa-twitter" />
                     </a>
                   </li>
                   <li className="list-inline-item">
                     <a href={member.linkedin} target="_blank">
-                      <i className="fa fa-linkedin" />
+                      <i className="fab fa-linkedin" />
                     </a>
                   </li>
                   <li className="list-inline-item">
                     <a href={member.github} target="_blank">
-                      <i className="fa fa-github" />
+                      <i className="fab fa-github" />
                     </a>
                   </li>
                 </ul>

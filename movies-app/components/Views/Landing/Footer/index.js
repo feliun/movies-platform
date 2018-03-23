@@ -32,10 +32,10 @@ const Footer = ({ data }) => (
         <div className="col-md-4">
           <ul className="list-inline quicklinks">
             <li className="list-inline-item">
-              <a href={data.privacy}>Privacy Policy</a>
+              <a href={data.privacy} target="_blank">Privacy Policy</a>
             </li>
             <li className="list-inline-item">
-              <a href={data.termsOfUse}>Terms of Use</a>
+              <a href={data.termsOfUse} target="_blank">Terms of Use</a>
             </li>
           </ul>
         </div>

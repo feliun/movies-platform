@@ -18,18 +18,18 @@ const model = {
     values: [
       {
         title: 'Scalable',
-        icon: 'fa-shopping-cart',
+        icon: 'fas fa-boxes',
         description: 'Demanding services can be deployed in multiple servers to enhance performance',
       },
       {
         title: 'Resilient',
-        icon: 'fa-laptop',
+        icon: 'fas fa-heartbeat',
         description: 'Failure in one service does not impact other services. Replicas make high availability easier',
       },
       {
         title: 'Decoupled',
-        icon: 'fa-lock',
-        description: 'Being independent services, they have less chances to impact each other. Plus, development can happen in parallel without much headache',
+        icon: 'fas fa-rocket',
+        description: 'Being independent services, they have less chances to impact each other. Plus, development and fast deployment can happen in parallel without much headache',
       },
     ],
   },
@@ -39,7 +39,7 @@ const model = {
     values: [
       {
         title: 'React & Redux',
-        img: 'img/about/1.jpg',
+        img: 'static/img/react.png',
         description: 'React is a JS library for building user interfaces. It makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.',
       },
       {
