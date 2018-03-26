@@ -18,7 +18,7 @@ MovieScreen.getInitialProps = async ({ query }) => {
     .then(movie => ({ movie }));
 };
 
-const mapStateToProps = ({ light, movies }) => ({ light, movies });
+const mapStateToProps = ({ movies }) => ({ movies });
 
 const mapDispatchToProps = () => ({});
 
