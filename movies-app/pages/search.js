@@ -1,14 +1,15 @@
 import React from 'react';
 import withRedux from 'next-redux-wrapper';
+import 'isomorphic-fetch';
 import MoviesList from '../components/Views/MoviesList/container';
 import Layout from '../components/Layout/Main';
-import allMovies from '../fixtures/movies.json';
 import { initStore, updateMovies } from '../store';
 
 class MainScreen extends React.Component {
-  static getInitialProps({ store, isServer }) {
-    store.dispatch(updateMovies({ movies: allMovies, isServer }));
-    return { isServer };
+  static async getInitialProps({ store }) {
+    return fetch('http://localhost:3000/api/v1/movies') // eslint-disable-line no-undef
+      .then(res => res.json())
+      .then(movies => store.dispatch(updateMovies({ movies })));
   }
 
   render() {
