@@ -19,6 +19,13 @@ module.exports = () => {
         .catch(next);
     });
 
+    app.get('/api/v1/cms/:id', (req, res, next) => {
+      const { id } = req.params;
+      collections.landing_content.findOne({ id: parseInt(id, 10) })
+        .then((content) => res.json(content))
+        .catch(next);
+    });
+
     cb();
   };
 
