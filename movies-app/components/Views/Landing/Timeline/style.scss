@@ -109,6 +109,10 @@
   margin-bottom: 0;
 }
 
+.timeline-image img {
+  height: 100%;
+}
+
 @media (min-width: 768px) {
   .timeline:before {
     left: 50%;
