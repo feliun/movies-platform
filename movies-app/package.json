@@ -7,7 +7,7 @@
     "start": "node server.js",
     "lint": "eslint .",
     "qa": "npm run lint",
-    "docker": "echo 'No docker dependencies to start...'",
+    "docker": "bash -c '(docker network inspect local 2>&1 > /dev/null || docker network create local)'",
     "precommit": "npm run lint"
   },
   "devDependencies": {
