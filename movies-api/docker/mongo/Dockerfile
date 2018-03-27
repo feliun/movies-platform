@@ -7,3 +7,4 @@ ENV MONGO_INITDB_ROOT_PASSWORD password
 # Create app directory
 COPY setup.sh /docker-entrypoint-initdb.d/
 COPY movies.json /movies.json
+COPY cms.json /cms.json
