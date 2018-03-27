@@ -17,6 +17,7 @@ before_script:
 - make ensure-dependencies
 script:
 - make brand
+- make build
 - make package
 - make qa
 after_success:
@@ -26,3 +27,4 @@ matrix:
   - env: SERVICE=movies-api
     services:
     - docker
+  - env: SERVICE=movies-app

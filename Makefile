@@ -18,6 +18,12 @@ ensure-dependencies:
 	@npm run docker
 	@sleep 10
 
+build:
+	@echo "Nothing to build here..."
+
+start:
+	docker run -d -p $(SERVICE_PORT):$(SERVICE_PORT) -e SERVICE_ENV=live --name $(SERVICE) --network=local $(SERVICE):$(TRAVIS_BUILD_NUMBER)
+
 archive: start
 	@docker login -u=$(DOCKER_USERNAME) -p=$(DOCKER_PASSWORD) $(DOCKER_HOST)
 	@docker ps
