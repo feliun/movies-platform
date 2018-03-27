@@ -13,7 +13,7 @@ const MovieScreen = ({ movie }) => (
 
 MovieScreen.getInitialProps = async ({ query }) => {
   const { id } = query;
-  return fetch(`http://localhost:3000/api/v1/movies/${id}`) // eslint-disable-line no-undef
+  return fetch(`${query.config.apiUrl}/api/v1/movies/${id}`) // eslint-disable-line no-undef
     .then(res => res.json())
     .then(movie => ({ movie }));
 };

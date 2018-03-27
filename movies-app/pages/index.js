@@ -8,8 +8,8 @@ const LandingScreen = ({ cms }) => (
   <Landing cms={cms} />
 );
 
-LandingScreen.getInitialProps = async () =>
-  fetch('http://localhost:3000/api/v1/cms/1') // eslint-disable-line no-undef
+LandingScreen.getInitialProps = async ({ query }) =>
+  fetch(`${query.config.apiUrl}/api/v1/cms/1`) // eslint-disable-line no-undef
     .then(res => res.json())
     .then(cms => ({ cms }));
 
